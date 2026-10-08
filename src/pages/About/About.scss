@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+}
+html,body{  
+    padding: 0;
+    margin: 0;
+    font-family: "MontSerrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.about_container{
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+}
+.about_main_container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: white;
+    overflow-y: scroll;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.about_main_container::-webkit-scrollbar {
+    width: 4px;
+}
+
+.about_main_container::-webkit-scrollbar-track {
+    background: none;
+    border-radius: 10px;
+} 
+
+.about_main_container::-webkit-scrollbar-thumb {
+    background: none;
+    border-radius: 10px;
+}
+
+.about_banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../assets/images/about_image.jpg");
+    min-height: 20dvh;
+    border-radius: 15px; 
+}
+
+.site_informations_container{
+    display:flex;
+    flex-direction:column;
+    gap: 20px;
+    width: 70%;
+    margin: 20px auto;
+} 
+
+.collapse_informations{
+    display: flex;
+    flex-direction: column; 
+}
+.description{
+    background-color: #FF6060;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    color:white;
+}
+
+.description.active{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.collapse_informations img{
+    width: 17px;
+}
+.details{
+    background-color: #F6F6F6;
+    color: #FF6060;
+    padding: 25px 10px 10px 10px;
+}
+
+@media screen and (max-width: 767px){
+    .about_main_container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .about_banner{
+        min-height: 25dvh;
+        border-radius: 8px;
+    }
+    .site_informations_container{
+        width: 100%;
+    }
+
+
+}
+@media all and (min-width: 768px) and (max-width: 1032px){
+    .about_main_container{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+

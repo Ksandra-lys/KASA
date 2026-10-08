@@ -1,16 +1,24 @@
-# React + Vite
+#KASA
+Application web de location de logements développée avec React qui permet aux utilisateurs de consulter différents logements, d'accéder à leurs détails
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##Technologies
+React.js, Typescript, Sass
 
-Currently, two official plugins are available:
+##Installation
+Clonez le repository :
+git clone https://github.com/VOTRE-NOM/kasa-hebergements.git
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Accédez au dossier du projet :
+cd kasa-hebergements
 
-## React Compiler
+Installez les dépendances :
+npm install
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Lancez le serveur de développement :
+npm run dev
 
-## Expanding the ESLint configuration
+L'application sera ensuite accessible depuis l'adresse indiquée dans le terminal.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+

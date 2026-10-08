@@ -1,0 +1,48 @@
+.listing_lodging_picture_container {
+    max-height: 60vh;
+    position: relative;
+    margin: 0 40px;
+}
+
+.listing_lodging_picture {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.left_arrow,
+.right_arrow {
+    position: absolute;
+    z-index: 10;
+    width: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.left_arrow {
+    left: 10px;
+}
+
+.right_arrow {
+    right: 10px;
+}
+
+@media screen and (max-width: 767px){
+    .listing_lodging_picture_container {
+        margin: 0;
+    }
+
+    .left_arrow,
+    .right_arrow {
+        width: 14px;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1032px){
+   .listing_lodging_picture_container{
+    max-height: 30vh;
+   }
+}
